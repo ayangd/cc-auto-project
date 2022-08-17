@@ -44,24 +44,26 @@ function DefaultTemplateDrawerChildren(
     <>
       <Toolbar />
       <Box sx={{ width: 240, py: 1 }}>
-        {menuList.map((menuItem, index) => {
-          const Icon = menuItem.icon ?? QuestionMarkIcon;
-          return (
-            <ListItem key={index} disablePadding>
-              <ListItemButton
-                onClick={() => {
-                  toggleDrawerOpen();
-                  menuItem.onClick?.();
-                }}
-              >
-                <ListItemIcon>
-                  <Icon />
-                </ListItemIcon>
-                <ListItemText primary={menuItem.label} />
-              </ListItemButton>
-            </ListItem>
-          );
-        })}
+        <List>
+          {menuList.map((menuItem, index) => {
+            const Icon = menuItem.icon ?? QuestionMarkIcon;
+            return (
+              <ListItem key={index} disablePadding>
+                <ListItemButton
+                  onClick={() => {
+                    toggleDrawerOpen();
+                    menuItem.onClick?.();
+                  }}
+                >
+                  <ListItemIcon>
+                    <Icon />
+                  </ListItemIcon>
+                  <ListItemText primary={menuItem.label} />
+                </ListItemButton>
+              </ListItem>
+            );
+          })}
+        </List>
       </Box>
     </>
   );

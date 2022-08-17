@@ -1,22 +1,8 @@
-import {
-  AppBar,
-  Box,
-  Container,
-  CssBaseline,
-  Drawer,
-  IconButton,
-  List,
-  ListItem,
-  ListItemButton,
-  Paper,
-  Toolbar,
-  Typography,
-} from '@mui/material';
+import { Box, Paper } from '@mui/material';
 import { Computer as ComputerIcon } from '@mui/icons-material';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { useCallback, useState } from 'react';
-import { DefaultTemplate } from '../../../templates/Default';
+import { DefaultTemplate } from '@templates/Default';
 
 const Home: NextPage = () => {
   const many = [];
