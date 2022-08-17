@@ -9,7 +9,9 @@ the robot to chop woods, mine, build, and farm from an external GUI: a web inter
 
 ## Setting up the project
 
-Before you set up the project, you will need [node.js](https://nodejs.org/en/) installed on the device you're setting up the project in.
+Before you set up the project, you will need [`node.js`](https://nodejs.org/en/)
+(recommended version 16 or up) and `npm` installed on the device you're setting
+up the project in.
 
 To get started, install the dependencies by running:
 
